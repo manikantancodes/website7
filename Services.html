@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaviGo Tech Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Meta Tags -->
+    <meta name="title" content="Digital Services by NaviGo Tech Solutions | digital-marketing,web-development, app-development, Marketing & AI Solutions">
+    <meta name="description" content="Discover comprehensive digital services from NaviGo Tech Solutions, including social media marketing, web development, app development, digital marketing, branding, and AI-driven solutions. Drive growth with tailored strategies.">
+
+    <!-- JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "NaviGo Tech Solutions",
+      "image": "https://navigotechsolutions.com/img/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "600106",
+        "streetAddress": "No. 56, 2nd Floor, 3rd East Cross Street"
+      },
+      "telephone": "+916380853075",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* Service Grid Layout */
+        .services-container {
+            padding: 4rem 0;
+            background: var(--light-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .service-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                padding: 0 1rem;
+            }
+            
+            .service-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Brand Colors */
+        :root {
+            --primary-color: #1E90FF;      /* NaviGo Blue - Primary Brand Color */
+            --secondary-color: #4169E1;    /* Royal Blue - Secondary Brand Color */
+            --accent-color: #40E0D0;       /* Turquoise - Accent Color */
+            --dark-color: #0a192f;         /* Dark Blue - Dark Theme */
+            --light-color: #f8f9fa;        /* Light Gray - Light Theme */
+            --text-primary: #343a40;       /* Dark Gray - Primary Text */
+            --text-secondary: #6c757d;     /* Medium Gray - Secondary Text */
+            --text-light: #ffffff;         /* White - Light Text */
+            --success-color: #28a745;      /* Green - Success Messages */
+            --warning-color: #ffc107;      /* Yellow - Warning Messages */
+            --error-color: #dc3545;        /* Red - Error Messages */
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Poppins', sans-serif;  /* Primary Font */
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Service Cards Base Style */
+        .service-card {
+            background: var(--light-color);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Service Icons */
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(30, 144, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon i {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Section Headers */
+        .section-title {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+
+        /* Feature Lists */
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .service-features li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        /* AI Service Cards - Dark Theme */
+        .ai-card {
+            background: var(--dark-color);
+            color: var(--text-light);
+            border: 1px solid rgba(30, 144, 255, 0.2);
+        }
+
+        .ai-card h4, 
+        .ai-card p {
+            color: var(--text-light);
+        }
+
+        /* Creative Service Cards */
+        .creative-card {
+            background: linear-gradient(145deg, var(--light-color), #ffffff);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .service-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .service-icon {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        /* Accessibility */
+        .btn:focus,
+        .service-card:focus {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        /* Print Styles */
+        @media print {
+            .service-card {
+                break-inside: avoid;
+                border: 1px solid #ddd;
+            }
+            
+            .service-icon {
+                print-color-adjust: exact;
+            }
+        }
+
+        /* Base styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #FFFFFF; /* Ivory */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            padding: 10px 0;
+        }
+
+        .navbar-brand h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+        }
+
+        .navbar-brand span {
+            display: block; /* Make "Tech Solutions" appear below "NaviGo" */
+            color: #a9a9a9; /* Silver */
+            font-size: 1.2rem; /* Smaller font size for Tech Solutions */
+            margin-top: 5px; /* Space between NaviGo and Tech Solutions */
+        }
+
+        .hero-header {
+            background-color: var(--primary);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .nav-item .nav-link {
+            color: #ffffff;
+        }
+
+        .nav-item .nav-link:hover {
+            color: #a9a9a9; /* Silver */
+        }
+
+        .hero-header h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero-header p {
+            color: #FFFFFF; /* Ivory */
+        }
+
+        /* Smooth transition for scroll logo */
+        #scroll-logo {
+            transition: opacity 0.2s ease;
+        }
+
+        .service-item {
+            position: relative;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(30, 144, 255, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            padding: 2rem;
+            margin: 0.8rem 0;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+        }
+
+        .small-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #1E90FF;
+            color: #FFFFFF;
+            font-size: 13px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            border: none;
+        }
+
+        .small-btn:hover {
+            background-color: #1C2035;
+            transform: translateY(-2px);
+            box-shadow: 0 3px 10px rgba(30, 144, 255, 0.2);
+        }
+
+        .service-item h4 {
+            font-size: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .service-item p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 1.2rem;
+        }
+
+        .service-item .features-list li {
+            padding: 0.3rem 0;
+            font-size: 14px;
+        }
+
+        .service-item .d-inline-flex {
+            width: 50px !important;
+            height: 50px !important;
+            margin-bottom: 1rem;
+        }
+
+        .col-lg-6 {
+            padding: 0.8rem;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(30, 144, 255, 0.1);
+        }
+
+        .service-item .features-list {
+            margin-bottom: 1.5rem;
+        }
+
+        .service-item .features-list li {
+            padding: 0.5rem 0;
+            color: #555;
+        }
+
+        .service-item .features-list i {
+            color: #1E90FF;
+            margin-right: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .row {
+            margin: -1.5rem -1.5rem;
+        }
+
+        .col-lg-6 {
+            padding: 1.5rem;
+        }
+
+        @media (max-width: 991.98px) {
+            .service-item {
+                padding: 2.5rem;
+                margin: 1rem 0;
+            }
+            .row {
+                margin: -1rem -1rem;
+            }
+            .col-lg-6 {
+                padding: 1rem;
+            }
+        }
+
+        .specialized-services {
+            background: linear-gradient(135deg, #1E90FF, #1C2035);
+            padding: 80px 0;
+        }
+
+        .specialized-services .service-item {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px 20px;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #1C2035;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid rgba(30, 144, 255, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(30, 144, 255, 0.1);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(30, 144, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .service-icon i {
+            color: #1E90FF;
+            font-size: 28px;
+        }
+
+        .price-tag {
+            display: none;
+        }
+
+        .package-card {
+            display: none;
+        }
+
+        .feature-list {
+            margin-bottom: 1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            color: #1E90FF;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .accordion-item {
+            border: 1px solid rgba(30, 144, 255, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        .accordion-button {
+            background-color: #ffffff;
+            color: #1C2035;
+            font-weight: 600;
+            padding: 1.25rem;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #1E90FF;
+            color: #ffffff;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(30, 144, 255, 0.1);
+        }
+
+        .accordion-body {
+            padding: 2rem;
+            background-color: #ffffff;
+        }
+
+        .service-content .lead {
+            color: #1C2035;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .service-content .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+        }
+
+        .service-content .feature-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .service-content .feature-list li:before {
+            content: "✓";
+            color: #1E90FF;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .success-story {
+            background-color: rgba(30, 144, 255, 0.05);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .btn-primary {
+            background-color: #1E90FF;
+            border-color: #1E90FF;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: #1C2035;
+            border-color: #1C2035;
+        }
+
+        /* Service Cards Styles */
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #1E90FF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-icon i {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #1E90FF;
+        }
+
+        .price-tag {
+            color: #1E90FF;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Service Item Styles */
+        .service-item {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(30, 144, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-list li {
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #666;
+        }
+
+        .service-list li i {
+            width: 20px;
+        }
+
+        .btn-primary {
+            background-color: #1E90FF;
+            border-color: #1E90FF;
+        }
+
+        .btn-primary:hover {
+            background-color: #1C2035;
+            border-color: #1C2035;
+        }
+
+        .text-primary {
+            color: #1E90FF !important;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 991.98px) {
+            .service-item {
+                padding: 2rem !important;
+            }
+        }
+
+        /* Add styles for clickable containers */
+        .service-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        .service-link:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Performance Optimizations */
+        .footer {
+            position: relative;
+            background: #1E90FF;
+            color: white;
+            will-change: transform; /* Optimize animations */
+            -webkit-font-smoothing: antialiased; /* Smoother text */
+        }
+
+        /* Optimize hover transitions */
+        .service-item {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: transform 0.2s ease, background-color 0.2s ease; /* Faster, separate transitions */
+            padding: 5px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            backface-visibility: hidden; /* Reduce flickering */
+            transform: translateZ(0); /* Hardware acceleration */
+        }
+
+        /* Optimize social icons */
+        .btn-social {
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            will-change: transform;
+            backface-visibility: hidden;
+        }
+
+        /* Optimize layout performance */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            contain: content; /* Improve rendering performance */
+        }
+
+        /* Reduce repaints */
+        .footer-contact, .footer-links {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transform: translateZ(0);
+        }
+
+        /* Optimize animations */
+        .wow.fadeIn {
+            animation-duration: 0.5s; /* Faster animation */
+        }
+
+        /* Prevent layout shifts */
+        .row.d-flex.justify-content-between {
+            margin: 0 -15px;
+            align-items: flex-start;
+            min-height: 300px; /* Set minimum height to prevent content jumps */
+        }
+
+        /* Optimize for mobile */
+        @media (max-width: 768px) {
+            .footer-contact, .footer-links {
+                text-align: center;
+                margin-bottom: 20px;
+                transform: none; /* Remove transforms on mobile */
+            }
+            
+            .services-list {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 8px; /* Smaller gap on mobile */
+            }
+            
+            .service-item {
+                padding: 4px 12px; /* Smaller padding on mobile */
+                font-size: 0.85rem; /* Slightly smaller font on mobile */
+            }
+        }
+
+        /* Prevent FOUC (Flash of Unstyled Content) */
+        .footer {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(30, 144, 255, 0.9), rgba(30, 144, 255, 0.7)), url('img/services/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Service Cards */
+        .service-card {
+            padding: 2rem;
+            border-radius: 15px;
+            background: #fff;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(30, 144, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon i {
+            font-size: 1.8rem;
+            color: #1E90FF;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+            flex-grow: 1;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            color: #6c757d;
+        }
+
+        .service-features li i {
+            color: #1E90FF;
+            margin-right: 10px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: #1E90FF;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        /* Enhanced Animations */
+        .service-card {
+            transform-origin: center;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+            background: rgba(30, 144, 255, 0.2);
+        }
+
+        .service-features li {
+            transition: all 0.3s ease;
+            transform: translateX(0);
+        }
+
+        .service-card:hover .service-features li {
+            transform: translateX(5px);
+        }
+
+        .service-features li:nth-child(2) {
+            transition-delay: 0.05s;
+        }
+
+        .service-features li:nth-child(3) {
+            transition-delay: 0.1s;
+        }
+
+        .btn-primary {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(255,255,255,0.2);
+            transition: width 0.3s ease;
+        }
+
+        .btn-primary:hover:after {
+            width: 100%;
+        }
+
+        /* Service Category Styles */
+        .service-category {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .service-category:last-child {
+            border-bottom: none;
+        }
+
+        .service-category h3 {
+            color: #1E90FF;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .service-category h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: #1E90FF;
+        }
+
+        /* Wow Animation Customization */
+        .wow {
+            visibility: hidden;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 40px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        /* Additional Animation Styles */
+        .service-card {
+            animation-duration: 0.4s;
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .service-card:hover .service-icon i {
+            animation: iconBounce 0.5s ease;
+        }
+
+        @keyframes iconBounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .service-features li {
+            opacity: 0.9;
+            transform: translateX(0);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-features li {
+            opacity: 1;
+            transform: translateX(5px);
+        }
+
+        /* Staggered Animation Delays for Features */
+        .service-features li:nth-child(1) { transition-delay: 0.1s; }
+        .service-features li:nth-child(2) { transition-delay: 0.2s; }
+        .service-features li:nth-child(3) { transition-delay: 0.3s; }
+        .service-features li:nth-child(4) { transition-delay: 0.4s; }
+
+        /* Digital Marketing Section Specific Styles */
+        .service-category .service-card .service-icon {
+            background: rgba(30, 144, 255, 0.1);
+            transition: all 0.4s ease;
+        }
+
+        .service-category .service-card:hover .service-icon {
+            background: rgba(30, 144, 255, 0.2);
+            transform: rotate(360deg);
+        }
+
+        .service-category .service-card:hover .service-icon i {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Enhanced Feature List Animation */
+        .service-features li {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-features li i {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-features li i {
+            color: #1E90FF;
+            transform: translateY(-50%) scale(1.2);
+        }
+
+        /* Creative Services Specific Styles */
+        .creative-card {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border: none;
+            transition: all 0.4s ease;
+        }
+
+        .creative-card:hover {
+            background: linear-gradient(145deg, #f8f9fa, #ffffff);
+            transform: translateY(-10px) scale(1.02);
+        }
+
+        .creative-icon {
+            background: linear-gradient(145deg, #1E90FF, #4169E1);
+            color: white;
+            transition: all 0.5s ease;
+        }
+
+        .creative-icon i {
+            color: white;
+            transition: all 0.5s ease;
+        }
+
+        .creative-card:hover .creative-icon {
+            transform: rotate(360deg);
+            background: linear-gradient(145deg, #4169E1, #1E90FF);
+        }
+
+        .creative-card:hover .service-features li {
+            transform: translateX(10px);
+            color: #4169E1;
+        }
+
+        .creative-btn {
+            background: linear-gradient(145deg, #1E90FF, #4169E1);
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .creative-btn:hover {
+            background: linear-gradient(145deg, #4169E1, #1E90FF);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(65, 105, 225, 0.3);
+        }
+
+        /* Enhanced Animations */
+        .creative-card .service-features li {
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .creative-card .service-features li::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            width: 0;
+            height: 2px;
+            background: #4169E1;
+            transition: all 0.4s ease;
+        }
+
+        .creative-card:hover .service-features li::before {
+            width: 5px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .creative-card {
+                margin-bottom: 30px;
+            }
+        }
+
+        /* AI Services Specific Styles */
+        .ai-card {
+            background: linear-gradient(165deg, #1a1a1a, #2a2a2a);
+            color: #fff;
+            border: 1px solid rgba(30, 144, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-card h4, .ai-card p {
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ai-glow {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(30, 144, 255, 0.15);
+            border-radius: 50%;
+            filter: blur(20px);
+            top: -75px;
+            right: -75px;
+            transition: all 0.5s ease;
+        }
+
+        .ai-card:hover .ai-glow {
+            transform: scale(1.5);
+            background: rgba(30, 144, 255, 0.25);
+        }
+
+        .ai-icon {
+            background: linear-gradient(145deg, #1E90FF, #4169E1);
+            box-shadow: 0 0 20px rgba(30, 144, 255, 0.3);
+        }
+
+        .ai-card:hover .ai-icon {
+            animation: pulse 1.5s infinite;
+        }
+
+        .ai-card .service-features li {
+            color: #e0e0e0;
+            border-left: 2px solid transparent;
+            padding-left: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .ai-card:hover .service-features li {
+            border-left: 2px solid #1E90FF;
+            padding-left: 20px;
+        }
+
+        .ai-btn {
+            background: linear-gradient(145deg, #1E90FF, #4169E1);
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+        }
+
+        .ai-btn:hover::after {
+            transform: rotate(45deg) translate(50%, 50%);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(30, 144, 255, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(30, 144, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(30, 144, 255, 0); }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .ai-card {
+                margin-bottom: 30px;
+            }
+        }
+
+        /* Additional AI-Powered Services Section */
+        .service-category mb-5 {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .service-category:last-child {
+            border-bottom: none;
+        }
+
+        .service-category h3 {
+            color: #1E90FF;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .service-category h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: #1E90FF;
+        }
+
+        /* Advanced AI Services Styles */
+        .ai-advanced-card {
+            background: linear-gradient(135deg, #0a192f, #112240);
+            color: #fff;
+            border: 1px solid rgba(64, 224, 208, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-circuit-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('img/circuit-pattern.png');
+            opacity: 0.1;
+            transition: all 0.5s ease;
+        }
+
+        .ai-advanced-card:hover .ai-circuit-overlay {
+            opacity: 0.2;
+            transform: scale(1.1);
+        }
+
+        .ai-advanced-icon {
+            background: linear-gradient(145deg, #00b4d8, #0077b6);
+            box-shadow: 0 0 25px rgba(0, 180, 216, 0.3);
+        }
+
+        .ai-tech-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(64, 224, 208, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #40E0D0;
+        }
+
+        .ai-advanced-btn {
+            background: linear-gradient(145deg, #00b4d8, #0077b6);
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-advanced-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .ai-advanced-btn:hover::before {
+            left: 100%;
+        }
+
+        .ai-advanced-card .service-features li {
+            border-left: 3px solid transparent;
+            padding-left: 15px;
+            margin: 10px 0;
+            transition: all 0.3s ease;
+        }
+
+        .ai-advanced-card:hover .service-features li {
+            border-left: 3px solid #40E0D0;
+            padding-left: 20px;
+        }
+
+        /* Staggered Animation for Features */
+        .ai-advanced-card:hover .service-features li:nth-child(1) { transition-delay: 0.1s; }
+        .ai-advanced-card:hover .service-features li:nth-child(2) { transition-delay: 0.2s; }
+        .ai-advanced-card:hover .service-features li:nth-child(3) { transition-delay: 0.3s; }
+        .ai-advanced-card:hover .service-features li:nth-child(4) { transition-delay: 0.4s; }
+        .ai-advanced-card:hover .service-features li:nth-child(5) { transition-delay: 0.5s; }
+
+        @keyframes glowPulse {
+            0% { box-shadow: 0 0 5px #40E0D0; }
+            50% { box-shadow: 0 0 20px #40E0D0; }
+            100% { box-shadow: 0 0 5px #40E0D0; }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .ai-advanced-card {
+                margin-bottom: 30px;
+            }
+            
+            .ai-tech-badge {
+                top: 10px;
+                right: 10px;
+            }
+        }
+
+        .nav-link.service-link {
+            background: linear-gradient(135deg, #1E90FF, #4169E1) !important;
+            color: white !important;
+            border: 2px solid rgba(255, 255, 255, 0.3) !important;
+            padding: 12px 24px !important;
+            font-weight: 600 !important;
+            border-radius: 30px !important;
+            margin: 8px !important;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3) !important;
+            position: relative !important;
+            overflow: hidden !important;
+            text-decoration: none !important;
+            display: inline-block !important;
+        }
+
+        .nav-link.service-link::before {
+            content: '' !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: -100% !important;
+            width: 100% !important;
+            height: 100% !important;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
+            transition: left 0.5s !important;
+        }
+
+        .nav-link.service-link:hover {
+            background: linear-gradient(135deg, #4169E1, #1E90FF) !important;
+            transform: translateY(-3px) scale(1.05) !important;
+            box-shadow: 0 8px 25px rgba(30, 144, 255, 0.4) !important;
+            border-color: rgba(255, 255, 255, 0.6) !important;
+        }
+
+        .nav-link.service-link:hover::before {
+            left: 100% !important;
+        }
+
+        .nav-link.service-link:active {
+            transform: translateY(-1px) scale(1.02) !important;
+            box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3) !important;
+        }
+
+        /* Hero Header Styling */
+        .hero-header {
+            background-color: var(--primary);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-header h1 {
+            font-size: 2.7rem;
+            line-height: 1.3;
+            margin: 0 auto 1.5rem;
+            max-width: 800px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+
+        .hero-header h1 span {
+            color: #E6F3FF;
+            font-weight: 700;
+            display: inline-block; /* Prevents line break */
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.95;
+        }
+
+        .lead strong {
+            color: #E6F3FF;
+            font-weight: 600;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-buttons .btn {
+            min-width: 250px;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+        }
+
+        /* Primary button */
+        .btn-primary {
+            background: white;
+            color: #1E90FF;
+            border: none;
+        }
+
+        /* Secondary button */
+        .btn-outline-light {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        /* Wave Container Styling */
+        .wave-container {
+            position: relative;
+            margin-top: -50px;
+            z-index: 10;
+            background: transparent;
+            overflow: visible;
+        }
+
+        .wave-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+            filter: brightness(1) contrast(1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-xxl" style="background-color: #FFFFFF;">
+            <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+            <!-- Navbar & Hero Start -->
+            
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <!-- Logo Section -->
+                <img id="default-logo" src="img/20241213_225245.png" alt="Logo" style="height: 100px; width: 100px; margin-right: 80px; margin-top: 3px;">
+                <img id="scroll-logo" src="img/20241213_225245.png" alt="Logo" style="height: 100px; width: 100px; margin-right: 80px; margin-top: 3px; display: none;">
+                
+                <a href="" class="navbar-brand p-0" style="display: flex; align-items: center; margin-left: -60px;">
+                    <h1 class="m-0">
+                        NaviGo
+                        <span>Tech Solutions</span>
+                    </h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="Services.html" class="nav-item nav-link active">Services</a>
+                        <a href="pricing.html" class="nav-item nav-link">Pricing</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+<!-- Hero Header Section -->
+<div class="hero-header">
+    <div class="container">
+        <h1>Custom Web Development & Digital Marketing Services <span>in Chennai</span></h1>
+        
+        <p class="lead">
+            <strong>NaviGo Tech Solutions</strong> helps businesses in Tamil Nadu increase online visibility 
+            with data-driven <strong>website development</strong>, <strong>AI-powered marketing</strong>, 
+            and <strong>mobile app solutions</strong>.
+        </p>
+        
+        <!-- Services Navigation -->
+        <nav aria-label="breadcrumb">
+            <div class="service-nav" style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            ">
+                <a href="#web-development" 
+                   class="nav-link service-link">
+                   Web Development
+                </a>
+
+                <a href="#app-development" 
+                   class="nav-link service-link">
+                   App Development
+                </a>
+
+                <a href="#digital-marketing" 
+                   class="nav-link service-link">
+                   Digital Marketing
+                </a>
+
+                <a href="#branding"
+                   class="nav-link service-link">
+                   Branding
+                </a>
+
+                <a href="#ai-marketing"
+                   class="nav-link service-link">
+                   AI & Data Marketing
+                </a>
+
+                <a href="#advanced-ai"
+                   class="nav-link service-link">
+                   Advanced AI Solutions
+                </a>
+            </div>
+        </nav>
+        
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-outline-light btn-lg" aria-label="Get a free consultation quote">
+                <i class="fas fa-comments"></i> Get Free Consultation
+            </a>
+        </div>
+            </a>
+            <a href="tel:+916380853075" class="btn btn-outline-light btn-lg" aria-label="Call for free consultation">
+                <i class="fas fa-phone-alt"></i> Call +91 63808 53075
+            </a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Wave Structure Image -->
+<div class="wave-container" style="position: relative; margin-top: -50px; z-index: 10; background: transparent;">
+    <img src="img/bg-bottom.png" alt="Wave decoration" style="width: 100%; height: auto; display: block; max-width: 100%;">
+</div>
+
+<style>
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-image {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-image:hover {
+    animation-play-state: paused;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+</style>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar & Hero End -->
+        </div>
+    </header>
+
+<div class="container-xxl py-5" id="services">
+    <div class="container py-5 px-lg-5">
+        <!-- Section Title -->
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="mb-5">Our Digital Solutions</h2>
+        </div>
+
+        <!-- Web & App Development Section -->
+        <div id="web-development" class="service-category mb-5">
+            <h3 class="text-center mb-4 wow fadeInUp">Web Development</h3>
+            <div class="row g-4">
+                <!-- Static Websites -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Static Websites</h4>
+                        <p>Professional and responsive static websites perfect for small businesses.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Responsive Design</li>
+                            <li><i class="fas fa-check"></i> Fast Loading Speed</li>
+                            <li><i class="fas fa-check"></i> SEO Optimized</li>
+                            <li><i class="fas fa-check"></i> Mobile-Friendly</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Dynamic Websites -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Dynamic Websites</h4>
+                        <p>Interactive websites with CMS integration and dynamic content management.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> CMS Integration</li>
+                            <li><i class="fas fa-check"></i> User Management</li>
+                            <li><i class="fas fa-check"></i> Database Integration</li>
+                            <li><i class="fas fa-check"></i> Custom Admin Panel</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- E-commerce Websites -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h4>E-commerce Websites</h4>
+                        <p>Full-featured online stores with secure payment integration.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Payment Gateway Integration</li>
+                            <li><i class="fas fa-check"></i> Inventory Management</li>
+                            <li><i class="fas fa-check"></i> Order Tracking System</li>
+                            <li><i class="fas fa-check"></i> Customer Management</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Start Selling</a>
+                    </div>
+                </div>
+<!-- App Development Section -->
+<div id="app-development" class="service-category mb-5">
+    <h3 class="text-center mb-4 wow fadeInUp">App Development</h3>
+    <div class="row g-4 justify-content-center">
+        <!-- Single-Platform Apps -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4 class="mb-3">Single-Platform Apps</h4>
+                <p class="mb-4">Native iOS and Android applications tailored for specific platforms.</p>
+                <ul class="service-features list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Native iOS Development</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Native Android Development</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Platform-Specific Features</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>App Store Optimization</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary mt-auto">Build Your App</a>
+            </div>
+        </div>
+
+        <!-- Cross-Platform Apps -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <h4 class="mb-3">Cross-Platform Apps</h4>
+                <p class="mb-4">Unified applications that work seamlessly across multiple platforms.</p>
+                <ul class="service-features list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>iOS & Android Support</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Single Codebase</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Cost-Effective Development</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Faster Time-to-Market</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary mt-auto">Get Started</a>
+            </div>
+        </div>
+
+        <!-- Enterprise-Level Apps -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h4 class="mb-3">Enterprise-Level Apps</h4>
+                <p class="mb-4">Scalable and secure applications for large organizations.</p>
+                <ul class="service-features list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Custom Enterprise Solutions</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Advanced Security Features</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Scalable Architecture</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Integration Capabilities</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary mt-auto">Enterprise Solutions</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Digital Marketing Section -->
+        <div id="digital-marketing" class="service-category mb-5"></div>
+            <h3 class="text-center mb-4 wow fadeInUp">Digital Marketing Services</h3>
+            <div class="row g-4">
+                <!-- SEO -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Search Engine Optimization (SEO)</h4>
+                        <p>Boost your website's visibility and rank higher in search results.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Keyword Research & Analysis</li>
+                            <li><i class="fas fa-check"></i> On-Page SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Technical SEO Improvements</li>
+                            <li><i class="fas fa-check"></i> Link Building Strategies</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Boost Rankings</a>
+                    </div>
+                </div>
+
+                <!-- Social Media Marketing -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h4>Social Media Marketing</h4>
+                        <p>Engage your audience and build brand presence on social platforms.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Social Media Strategy</li>
+                            <li><i class="fas fa-check"></i> Content Creation & Curation</li>
+                            <li><i class="fas fa-check"></i> Community Management</li>
+                            <li><i class="fas fa-check"></i> Social Media Advertising</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Grow Social Presence</a>
+                    </div>
+                </div>
+
+                <!-- Content Marketing -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h4>Content Marketing</h4>
+                        <p>Create valuable content that attracts and retains your target audience.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Content Strategy Planning</li>
+                            <li><i class="fas fa-check"></i> Blog Writing & Management</li>
+                            <li><i class="fas fa-check"></i> Infographic Design</li>
+                            <li><i class="fas fa-check"></i> Video Content Creation</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Start Creating</a>
+                    </div>
+                </div> 
+        <!-- Email Marketing -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-card h-100">
+                <div class="service-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h4>Email Marketing</h4>
+                <p>Connect with your audience through targeted email campaigns.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Campaign Strategy</li>
+                    <li><i class="fas fa-check"></i> Email Template Design</li>
+                    <li><i class="fas fa-check"></i> Automation Workflows</li>
+                    <li><i class="fas fa-check"></i> Performance Tracking</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Start Campaigns</a>
+            </div>
+        </div>
+
+        <!-- PPC Advertising -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-card h-100">
+                <div class="service-icon">
+                    <i class="fas fa-ad"></i>
+                </div>
+                <h4>Pay-Per-Click (PPC) Advertising</h4>
+                <p>Drive targeted traffic and conversions through paid advertising.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Google Ads Management</li>
+                    <li><i class="fas fa-check"></i> Social Media Ads</li>
+                    <li><i class="fas fa-check"></i> Display Advertising</li>
+                    <li><i class="fas fa-check"></i> Remarketing Campaigns</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Start Advertising</a>
+            </div>
+        </div>
+
+        <!-- Analytics & Reporting -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-card h-100">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>Analytics & Reporting</h4>
+                <p>Track, analyze, and optimize your digital marketing performance.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Performance Tracking</li>
+                    <li><i class="fas fa-check"></i> Custom Reporting</li>
+                    <li><i class="fas fa-check"></i> Data Analysis</li>
+                    <li><i class="fas fa-check"></i> ROI Optimization</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get Insights</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-bottom: 80px;"></div>
+
+</div>
+</div>
+
+<!-- AI Agents & Automation Section -->
+<div id="ai-agents" class="service-category mb-5">
+    <h3 class="text-center mb-4 wow fadeInUp">AI Agents & Automation</h3>
+    <div class="row g-4">
+        <!-- AI Agent Card 1 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-card h-100">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h4>Autonomous Business Agents</h4>
+                <p>AI systems automating workflows with human-like decision making for 24/7 operations.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Process automation</li>
+                    <li><i class="fas fa-check"></i> API integrations</li>
+                    <li><i class="fas fa-check"></i> Self-learning algorithms</li>
+                    <li><i class="fas fa-check"></i> 24/7 monitoring</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+        
+        <!-- AI Agent Card 2 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-card h-100">
+                <div class="service-icon">
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+                <h4>Conversational AI Agents</h4>
+                <p>Human-like chatbots for customer service, sales, and internal support.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Multilingual support</li>
+                    <li><i class="fas fa-check"></i> Sentiment analysis</li>
+                    <li><i class="fas fa-check"></i> CRM integration</li>
+                    <li><i class="fas fa-check"></i> Natural language processing</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">See Demo</a>
+            </div>
+        </div>
+        
+        <!-- AI Agent Card 3 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-card h-100">
+                <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h4>Predictive AI Agents</h4>
+                <p>Forecast trends and behaviors using real-time data processing.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Demand forecasting</li>
+                    <li><i class="fas fa-check"></i> Anomaly detection</li>
+                    <li><i class="fas fa-check"></i> Custom dashboards</li>
+                    <li><i class="fas fa-check"></i> Real-time analytics</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Request Analysis</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Services Grid End -->
+
+
+<!-- Branding & Creative Services Section -->
+<div class="service-category mb-5">
+    <h3 class="text-center mb-4 wow fadeInUp">Branding & Creative Services</h3>
+    <div class="row g-4 justify-content-center">
+        <!-- Logo Design -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h4 class="mb-3">Logo Design</h4>
+                <p class="mb-4">Create a memorable brand identity with unique and professional logo design.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Custom Logo Creation</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Multiple Concepts</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Vector Files</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Unlimited Revisions</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Design Your Logo</a>
+            </div>
+        </div>
+
+        <!-- Brand Guidelines -->
+        <div id="branding" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h4 class="mb-3">Brand Guidelines</h4>
+                <p class="mb-4">Establish consistent brand standards across all platforms and materials.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Color Palettes</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Typography Selection</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Usage Guidelines</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Brand Voice & Tone</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Create Guidelines</a>
+            </div>
+        </div>
+
+        <!-- Visual Identity -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h4 class="mb-3">Visual Identity</h4>
+                <p class="mb-4">Develop a cohesive visual language that reflects your brand's personality.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Brand Elements</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Marketing Materials</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Social Media Assets</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Business Stationery</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Build Identity</a>
+            </div>
+        </div>
+
+        <!-- Packaging Design -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-box-open"></i>
+                </div>
+                <h4 class="mb-3">Packaging Design</h4>
+                <p class="mb-4">Create attractive and functional packaging that stands out on shelves.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Custom Packaging</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Label Design</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Product Photography</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Print Management</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Design Package</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AI & Data-Driven Marketing Section -->
+<div id="ai-marketing" class="service-category mb-5">
+    <h3 class="text-center mb-4 wow fadeInUp">AI & Data-Driven Marketing</h3>
+    <div class="row g-4 justify-content-center">
+        <!-- AI-Powered Analytics -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h4 class="mb-3">AI-Powered Analytics</h4>
+                <p class="mb-4">Leverage advanced AI algorithms to gain deeper insights into your data.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Machine Learning Analysis</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Pattern Recognition</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Automated Reporting</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Real-time Insights</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get AI Insights</a>
+            </div>
+        </div>
+
+        <!-- Personalized Campaigns -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-user-cog"></i>
+                </div>
+                <h4 class="mb-3">Personalized Campaigns</h4>
+                <p class="mb-4">Create targeted marketing campaigns using AI-driven customer insights.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Behavioral Analysis</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Dynamic Content</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Smart Segmentation</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>A/B Testing</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Start Personalizing</a>
+            </div>
+        </div>
+
+        <!-- Chatbots & Virtual Assistants -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h4 class="mb-3">Chatbots & Virtual Assistants</h4>
+                <p class="mb-4">Implement intelligent conversational AI to enhance customer service.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>24/7 Customer Support</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Natural Language Processing</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Multi-platform Integration</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Learning Capabilities</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Deploy AI Assistant</a>
+            </div>
+        </div>
+
+        <!-- Predictive Modeling -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h4 class="mb-3">Predictive Modeling</h4>
+                <p class="mb-4">Forecast trends and behaviors using advanced AI algorithms.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Customer Behavior Prediction</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Market Trend Analysis</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Risk Assessment</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>ROI Forecasting</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Predict Future</a>
+            </div>
+        </div>
+
+        <!-- Data Visualization -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-chart-pie"></i>
+                </div>
+                <h4 class="mb-3">Data Visualization</h4>
+                <p class="mb-4">Transform complex data into clear, actionable visual insights.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Interactive Dashboards</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Real-time Visualization</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Custom Reports</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Data Storytelling</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Visualize Data</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Additional AI-Powered Services Section -->
+<div id="advanced-ai" class="service-category mb-5">
+    <h3 class="text-center mb-4 wow fadeInUp">Advanced AI Solutions</h3>
+    <div class="row g-4 justify-content-center">
+        <!-- AI Content Generation -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-pen-nib"></i>
+                </div>
+                <h4 class="mb-3">AI Content Generation</h4>
+                <p class="mb-4">Automate and enhance your content creation process with advanced AI tools.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Blog Post Generation</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Social Media Captions</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Ad Copy Creation</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Content Optimization</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary mt-auto">Generate Content</a>
+            </div>
+        </div>
+
+        <!-- AI Customer Segmentation -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <h4 class="mb-3">AI Customer Segmentation</h4>
+                <p class="mb-4">Create hyper-targeted audience segments using advanced behavioral analysis.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Behavioral Pattern Analysis</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Dynamic Segmentation</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Predictive Demographics</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Purchase Pattern Recognition</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary mt-auto">Segment Audience</a>
+            </div>
+        </div>
+
+        <!-- AI-Powered Lead Scoring -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h4 class="mb-3">AI-Powered Lead Scoring</h4>
+                <p class="mb-4">Prioritize leads based on their conversion probability using AI insights.</p>
+                <ul class="service-features list-unstyled mb-4">
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Automated Lead Scoring</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Conversion Probability Analysis</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Engagement Tracking</li>
+                    <li class="mb-2"><i class="fas fa-check me-2"></i>Priority-based Routing</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Score Leads</a>
+            </div>
+        </div>
+        <!-- Voice Search Optimization -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-card h-100 text-center">
+                <div class="service-icon mx-auto mb-4">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h4>Voice Search Optimization</h4>
+                <p>Optimize your digital presence for the future of search technology.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Natural Language Processing</li>
+                    <li><i class="fas fa-check"></i> Voice Query Optimization</li>
+                    <li><i class="fas fa-check"></i> Featured Snippet Targeting</li>
+                    <li><i class="fas fa-check"></i> Local Search Optimization</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Optimize Voice</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Services Grid End -->
+        <style>
+            .services-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 2rem 1rem;
+            }
+
+            .service-card {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                border-radius: 15px;
+                padding: 2rem;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            }
+
+            .service-features {
+                flex-grow: 1;
+                margin: 1.5rem 0;
+            }
+
+            .btn-primary {
+                margin-top: auto;
+            }
+
+            @media (max-width: 768px) {
+                .services-grid {
+                    grid-template-columns: 1fr;
+                    gap: 1.5rem;
+                }
+            }
+
+            @media (min-width: 769px) and (max-width: 1024px) {
+                .services-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            .service-category {
+                margin-bottom: 4rem;
+            }
+
+            .service-category h3 {
+                margin-bottom: 2rem;
+            }
+        </style>
+    </div>
+</div>
+
+        <!-- Services FAQ Section Start -->
+        <div id="services-faq" class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h6 class="text-primary text-uppercase">FAQ</h6>
+                    <h1 class="mb-3">Frequently Asked Questions About Our Services</h1>
+                    <p class="mb-0">Get answers to common questions about our comprehensive digital solutions. From web development and digital marketing to AI-powered automation, we help businesses across Chennai and Tamil Nadu achieve their digital transformation goals.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="servicesFaqAccordion">
+                            <!-- Digital Marketing Services FAQ -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse1" aria-expanded="true" aria-controls="servicesCollapse1">
+                                        What digital marketing services do you offer for small businesses in Chennai?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse1" class="accordion-collapse collapse show" aria-labelledby="servicesFaq1" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        Our digital marketing services in Chennai are designed specifically for small businesses and startups. We offer comprehensive solutions including local SEO optimization to help you rank higher in Chennai searches, social media marketing for small businesses with content creation and community management, PPC advertising campaigns, and email marketing automation. We also specialize in creating engaging Reels and short-form video content for platforms like Instagram and TikTok. Our team helps businesses across Tamil Nadu build strong online presence and connect with their local audience effectively.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse2" aria-expanded="false" aria-controls="servicesCollapse2">
+                                        How can your web development company help my business in Tamil Nadu?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse2" class="accordion-collapse collapse" aria-labelledby="servicesFaq2" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        As a web development company in Tamil Nadu, we create custom websites that drive real business results. We specialize in WordPress development for easy content management, responsive website design that works perfectly on all devices, and e-commerce solutions for online selling. Our web development services include custom website design, mobile app development, website maintenance, and performance optimization. We ensure your website loads fast, ranks well in local searches, and provides excellent user experience for your customers in Chennai and across Tamil Nadu.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse3" aria-expanded="false" aria-controls="servicesCollapse3">
+                                        What AI solutions and automation tools do you provide for businesses?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse3" class="accordion-collapse collapse" aria-labelledby="servicesFaq3" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        Our AI solutions help businesses automate processes and improve efficiency. We develop custom AI chatbots for customer service that can handle inquiries 24/7, marketing automation tools that personalize customer experiences, and predictive analytics to forecast business trends. Our AI chatbot developers in Chennai create intelligent conversational agents that integrate with your website and social media platforms. We also offer data analytics solutions, automated reporting systems, and AI-powered content generation tools to help businesses save time and increase productivity.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse4" aria-expanded="false" aria-controls="servicesCollapse4">
+                                        What branding and design services does your agency offer in Chennai?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse4" class="accordion-collapse collapse" aria-labelledby="servicesFaq4" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        Our branding agency in Chennai provides complete brand identity solutions for businesses of all sizes. We offer professional logo design with multiple concepts and unlimited revisions, comprehensive brand identity development including color palettes and typography, marketing collateral design for business cards and brochures, and social media graphics for consistent brand presence. We also provide brand strategy consulting to help you position your business effectively in the Chennai market. Our creative team specializes in creating memorable brand experiences that resonate with your target audience.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse5" aria-expanded="false" aria-controls="servicesCollapse5">
+                                        How do your SEO services help businesses rank better in local searches?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse5" class="accordion-collapse collapse" aria-labelledby="servicesFaq5" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        Our SEO services focus on helping businesses dominate local search results in Chennai and Tamil Nadu. We provide technical SEO audits to identify and fix website issues, local SEO optimization including Google My Business management, keyword research targeting Chennai-specific search terms, and on-page optimization for better search visibility. We also offer content marketing strategies, link building services, and mobile SEO optimization. Our goal is to help your business appear in the top search results when potential customers in your area search for your services.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse6" aria-expanded="false" aria-controls="servicesCollapse6">
+                                        What social media marketing services do you provide for small businesses?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse6" class="accordion-collapse collapse" aria-labelledby="servicesFaq6" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        Our social media marketing for small businesses includes comprehensive management of all major platforms including Facebook, Instagram, LinkedIn, and YouTube. We create engaging content calendars, design eye-catching graphics, write compelling captions, and manage community engagement. We also specialize in creating viral Reels and short-form video content that helps businesses reach new audiences. Our services include paid social media advertising, influencer marketing campaigns, and detailed analytics reporting. We help small businesses build authentic connections with their audience and increase brand awareness without overwhelming their marketing budget.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse7" aria-expanded="false" aria-controls="servicesCollapse7">
+                                        How do your e-commerce solutions help online businesses grow?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse7" class="accordion-collapse collapse" aria-labelledby="servicesFaq7" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        Our e-commerce development services help businesses create powerful online stores that drive sales and growth. We build custom e-commerce websites using platforms like WooCommerce, Shopify, and Magento, integrate secure payment gateways, set up inventory management systems, and optimize the shopping experience for mobile users. We also provide e-commerce SEO optimization, conversion rate optimization, and ongoing maintenance services. Our solutions are designed to help businesses increase online sales, improve customer experience, and scale their digital commerce operations efficiently.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse8" aria-expanded="false" aria-controls="servicesCollapse8">
+                                        What makes NaviGo Tech Solutions different from other agencies in Chennai?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse8" class="accordion-collapse collapse" aria-labelledby="servicesFaq8" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        NaviGo Tech Solutions stands out in Chennai's digital agency landscape through our comprehensive approach and local expertise. We combine digital marketing, web development, AI solutions, and branding under one roof, eliminating the need for multiple agencies. Our team understands the unique challenges of doing business in Chennai and Tamil Nadu, and we provide personalized solutions tailored to local market conditions. We offer transparent pricing, regular progress updates, and measurable results. Our commitment to staying updated with the latest digital trends ensures our clients always have access to cutting-edge solutions that drive real business growth.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse9" aria-expanded="false" aria-controls="servicesCollapse9">
+                                        Do you provide services to businesses outside Chennai and Tamil Nadu?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse9" class="accordion-collapse collapse" aria-labelledby="servicesFaq9" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, we provide our digital services to businesses across India and internationally. While we're based in Chennai, our expertise extends to serving clients in Bangalore, Mumbai, Delhi, Hyderabad, and other major cities. We offer remote consultation services, virtual project management, and cloud-based solutions that make our services accessible regardless of location. Our web development and AI solutions can be deployed anywhere, and our digital marketing strategies are adaptable to different regional markets. We maintain the same high quality standards and professional service delivery for all our clients, making us a trusted digital partner for businesses globally.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="servicesFaq10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicesCollapse10" aria-expanded="false" aria-controls="servicesCollapse10">
+                                        What industries do you specialize in for digital services?
+                                    </button>
+                                </h2>
+                                <div id="servicesCollapse10" class="accordion-collapse collapse" aria-labelledby="servicesFaq10" data-bs-parent="#servicesFaqAccordion">
+                                    <div class="accordion-body">
+                                        We have experience serving diverse industries across Chennai and Tamil Nadu. Our expertise includes healthcare digital marketing, real estate digital services, education technology solutions, manufacturing digital transformation, retail e-commerce development, financial services marketing, hospitality digital solutions, and technology company branding. We understand the unique challenges and opportunities of each industry and provide tailored digital strategies that address specific business needs. Our industry knowledge helps businesses achieve better ROI, improve market positioning, and stay competitive in their respective sectors.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services FAQ Section End -->
+
+        <!-- FAQ Section Start -->
+<!-- CTA Section Start -->
+<div class="container-fluid py-5 cta-section-simple" style="background: linear-gradient(135deg, #1E90FF 0%, #1E90FF 100%);">
+    <div class="container py-5 px-lg-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-8 col-md-10 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Simple Icon -->
+                <div class="cta-icon mb-4" style="width: 70px; height: 70px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="fas fa-rocket" style="font-size: 1.8rem; color: #ffffff;"></i>
+                </div>
+                
+                <!-- Clean Title -->
+                <h2 class="text-white mb-4" style="font-size: 2.2rem; font-weight: 600; line-height: 1.3;">
+                    Ready to Transform Your Business?
+                </h2>
+                
+                <!-- Simple Subtitle -->
+                <p class="text-white mb-5" style="font-size: 1.1rem; line-height: 1.6; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+                    Join hundreds of businesses in Chennai and Tamil Nadu who trust us with their digital success. 
+                    Let's create something amazing together.
+                </p>
+                
+                <!-- Simple CTA Buttons -->
+                <div class="cta-buttons d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="contact.html" class="btn btn-cta-primary" style="
+                        background: #ffffff;
+                        color: #1E90FF;
+                        border: none;
+                        padding: 12px 30px;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        border-radius: 25px;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                    ">
+                        <i class="fas fa-comments"></i>
+                        Get Free Consultation
+                    </a>
+                    
+                    <a href="tel:+916380853075" class="btn btn-cta-secondary" style="
+                        background: transparent;
+                        color: #ffffff;
+                        border: 2px solid rgba(255,255,255,0.5);
+                        padding: 12px 30px;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        border-radius: 25px;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                    ">
+                        <i class="fas fa-phone-alt"></i>
+                        Call +91 63808 53075
+                    </a>
+                </div>
+                
+                <!-- Simple Trust Indicators -->
+                <div class="trust-indicators mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-6 text-center mb-3">
+                            <div class="trust-item" style="color: rgba(255,255,255,0.9);">
+                                <i class="fas fa-check-circle mb-2" style="font-size: 1.3rem; color: #4CAF50;"></i>
+                                <div style="font-size: 0.85rem;">Free Consultation</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 text-center mb-3">
+                            <div class="trust-item" style="color: rgba(255,255,255,0.9);">
+                                <i class="fas fa-clock mb-2" style="font-size: 1.3rem; color: #FF9800;"></i>
+                                <div style="font-size: 0.85rem;">24/7 Support</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 text-center mb-3">
+                            <div class="trust-item" style="color: rgba(255,255,255,0.9);">
+                                <i class="fas fa-shield-alt mb-2" style="font-size: 1.3rem; color: #2196F3;"></i>
+                                <div style="font-size: 0.85rem;">Secure & Reliable</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 text-center mb-3">
+                            <div class="trust-item" style="color: rgba(255,255,255,0.9);">
+                                <i class="fas fa-trophy mb-2" style="font-size: 1.3rem; color: #FFD700;"></i>
+                                <div style="font-size: 0.85rem;">Proven Results</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Simple CTA Section Styling */
+.cta-section-simple {
+    position: relative;
+}
+
+/* Simple Button Hover Effects */
+.btn-cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: #f8f9fa;
+}
+
+.btn-cta-secondary:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.8);
+    transform: translateY(-2px);
+}
+
+/* Simple Trust Indicators */
+.trust-item {
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.trust-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-section-simple h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .cta-section-simple p {
+        font-size: 1rem !important;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-cta-primary,
+    .btn-cta-secondary {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
+</style>
+<!-- CTA Section End -->
+    </main>
+<!-- Footer Start -->
+<div class="container-fluid bg-primary text-white footer mt-5 pt-5">
+    <div class="container border-top border-light">
+        <div class="row g-4 py-5">
+            <div class="col-lg-3 col-md-6 footer-section">
+                <div class="footer-info"> 
+                    <h4 class="text-white mb-4">Our Office</h4>
+            <div class="footer-info">
+                <div class="d-flex align-items-center contact-item">
+                    <i class="fa fa-map-marker-alt me-3"></i>
+                    <span>NaviGo Tech Solutions<br>No. 56, 2nd Floor,<br>3rd East Cross Street,<br>Amaravathi Nagar, Arumbakkam,<br>Chennai – 600106, Tamil Nadu, India</span>
+                </div>
+                <div class="d-flex align-items-center contact-item mt-3">
+                    <i class="fa fa-phone-alt me-3"></i>
+                    <span>+91-6380853075</span>
+                </div>
+                <div class="d-flex align-items-center contact-item mt-3">
+                    <i class="fa fa-envelope me-3"></i>
+                    <span>info@navigotechsolutions.com</span>
+                </div>
+                <div class="d-flex pt-4 gap-3 social-icons">
+                    <a class="social-btn" href="https://x.com/NavigoTech">
+                        <div class="social-circle">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </a>
+                    <a class="social-btn" href="https://www.facebook.com/NavigoTechsolutions/">
+                        <div class="social-circle">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a class="social-btn" href="https://www.instagram.com/navigo_tech_solutions">
+                        <div class="social-circle">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                    <a class="social-btn" href="https://www.linkedin.com/company/navigo-tech-solutions/">
+                        <div class="social-circle">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>                           
+            </div>
+            <div class="col-lg-3 col-md-6 footer-section">
+                <h4 class="text-white">Quick Links</h4>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="about.html" class="text-white">About Us</a></li>
+                    <li><a href="Services.html" class="text-white">Services</a></li>
+                    <li><a href="pricing.html" class="text-white">Pricing</a></li>
+                    <li><a href="blog.html" class="text-white">Blog</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-section">
+                <h4 class="text-white">Services</h4>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="Services.html#web-development" class="text-white">Web Development</a></li>
+                    <li><a href="Services.html#digital-marketing" class="text-white">Digital Marketing</a></li>
+                    <li><a href="Services.html#seo" class="text-white">SEO Optimization</a></li>
+                    <li><a href="Services.html#social-media" class="text-white">Social Media Marketing</a></li>
+                    <li><a href="Services.html#content" class="text-white">Content Creation</a></li>
+                    <li><a href="Services.html#consulting" class="text-white">IT Consulting</a></li>
+                </ul>
+            </div>
+        </div>
+            
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-white">&copy; <span class="current-year"></span> <a href="index.html" class="text-white">NaviGo Tech Solutions</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top">
+    <i class="bi bi-arrow-up"></i>
+</a>
+
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/916380853075" class="whatsapp-chat" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<script>
+    // Back to top button functionality
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').addClass('show');
+            $('.whatsapp-chat').addClass('show');
+        } else {
+            $('.back-to-top').removeClass('show');
+            $('.whatsapp-chat').removeClass('show');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 'smooth');
+        return false;
+    });
+</script>
+<script>
+    // Logo scroll effect
+    const defaultLogo = document.getElementById("default-logo");
+    const scrollLogo = document.getElementById("scroll-logo");
+    window.onscroll = function() {
+        if (window.scrollY > 50) {
+            defaultLogo.style.display = "none";
+            scrollLogo.style.display = "inline";
+        } else {
+            defaultLogo.style.display = "inline";
+            scrollLogo.style.display = "none";
+        }
+    };
+</script>
+<script>
+    // Navbar scroll effect - make navbar compact when scrolling
+    window.addEventListener("scroll", function() {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    // Initialize EmailJS with your Public Key
+    (function() {
+        emailjs.init('8e4tN7K8LbxYbYGmG'); // Replace with your actual Public Key
+    })();
+</script>
+
+<script>
+    // Smooth scrolling for service links
+    document.querySelectorAll('.nav-link.service-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 80, // Adjust for sticky navbar
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>

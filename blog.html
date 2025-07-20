@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaviGo Tech Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="Navigo Tech Solutions About">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #1e90ff;
+            --deep-navy: #032B44;
+            --ivory: #FFFFFF;
+            --silver: #a9a9a9;
+            --dark: #232323;
+            --shadow-sm: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--ivory);
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark);
+        }
+
+        h1 { font-size: 36px; font-weight: bold; }
+        h2 { font-size: 30px; font-weight: bold; }
+        h3 { font-size: 24px; font-weight: bold; }
+
+        .navbar {
+            background-color: var(--ivory);
+        }
+
+        .hero-header {
+            background-color: var(--primary);
+        }
+
+        .section-title {
+            color: var(--silver);
+        }
+
+        .text-primary {
+            color: var(--primary) !important;
+        }
+
+        .bg-light {
+            background-color: var(--ivory) !important;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--deep-navy);
+            border-color: var(--deep-navy);
+        }
+
+        .feature-item {
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <!-- Logo Section -->
+            <img id="default-logo" src="img/20241213_225245.png" alt="Logo" style="height: 100px; width: 100px; margin-right: 80px; margin-top: 3px;">
+            <!-- Changed to scroll logo -->
+            <img id="scroll-logo" src="img/20241213_225245.png" alt="Logo" style="height: 100px; width: 100px; margin-right: 80px; margin-top: 3px; display: none;">
+
+            <a href="" class="navbar-brand p-0" style="display: flex; align-items: center; margin-left: -60px;">
+                <h1 class="m-0">
+                    NaviGo
+                    <span>Tech Solutions</span>
+                    <!-- Tech Solutions under NaviGo -->
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    <a href="Services.html" class="nav-item nav-link">Services</a>
+                    <a href="pricing.html" class="nav-item nav-link">Pricing</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-xxl hero-header">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="text-white mb-4 animated slideInDown">Welcome to Our Blog</h1>
+                        <p class="pb-3 animated slideInDown">
+                            Explore the latest insights, trends, and expert opinions on digital transformation, 
+                            technology, and business growth. Stay informed and inspired with our carefully curated content.
+                        </p>
+                        <div class="d-flex align-items-center animated slideInRight">
+                            <a href="blog.html" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3">Read Articles</a>
+                            <a href="contact.html" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill">Write for Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navbar & Hero End -->
+    </div>
+
+    <script>
+        // Get references to both logos
+        const defaultLogo = document.getElementById("default-logo");
+        const scrollLogo = document.getElementById("scroll-logo");
+
+        // Function to toggle logo on scroll
+        window.onscroll = function() {
+            if (window.scrollY > 50) { // Scroll threshold (adjust as needed)
+                defaultLogo.style.display = "none"; // Hide default logo
+                scrollLogo.style.display = "inline"; // Show scroll logo
+            } else {
+                defaultLogo.style.display = "inline"; // Show default logo
+                scrollLogo.style.display = "none"; // Hide scroll logo
+            }
+        };
+    </script>
+
+<!-- Blog Grid -->
+<div class="container-xxl py-5">
+    <div class="container blog-container px-lg-5">
+        <div class="row g-4">
+            <!-- Blog Card 1 -->
+            <div class="col-md-6">
+                <a href="blogcontent1.html" style="text-decoration: none; color: inherit;">
+                    <div class="blog-item" style="cursor: pointer;">
+                        <img class="img-fluid" src="img/SEO Blog .jpg" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar"></i> Dec 23, 2024</span>
+                                <span><i class="fa fa-tag"></i> Digital Marketing</span>
+                            </div>
+                            <h3 class="blog-title">SEO Optimization: Boost Your Online Visibility</h3>
+                            <p>Discover the latest SEO strategies to stay ahead of search engine algorithms and boost your site's rankings.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="col-md-6">
+                <a href="blogcontent2.html" style="text-decoration: none; color: inherit;">
+                    <div class="blog-item" style="cursor: pointer;">
+                        <img class="img-fluid" src="img/Web design blog.jpg" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar"></i> Dec 22, 2024</span>
+                                <span><i class="fa fa-tag"></i> Web Development</span>
+                            </div>
+                            <h3 class="blog-title">Why Web Design Matters: Tips for a User-Friendly Website</h3>
+                            <p>Learn how intuitive design can drive conversions and improve user experience.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="col-md-6">
+                <a href="blogcontent3.html" style="text-decoration: none; color: inherit;">
+                    <div class="blog-item" style="cursor: pointer;">
+                        <img class="img-fluid" src="img/Social media marketing blog.jpg" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar"></i> Dec 21, 2024</span>
+                                <span><i class="fa fa-tag"></i> Social Media</span>
+                            </div>
+                            <h3 class="blog-title">Social Media Marketing: Building Your Brand Online</h3>
+                            <p>Find out how to effectively use social media to connect with your audience and increase brand awareness.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Blog Card 4 -->
+            <div class="col-md-6">
+                <a href="blogcontent7.html" style="text-decoration: none; color: inherit;">
+                    <div class="blog-item" style="cursor: pointer;">
+                        <img class="img-fluid" src="img/Mobile app development blog .jpg" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar"></i> Dec 20, 2024</span>
+                                <span><i class="fa fa-tag"></i> Mobile App Development</span>
+                            </div>
+                            <h3 class="blog-title">Mobile App Development: Innovative Solutions</h3>
+                            <p>Content marketing is a powerful tool for attracting and retaining customers.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Blog Card 5 -->
+            <div class="col-md-6">
+                <a href="blogcontent4.html" style="text-decoration: none; color: inherit;">
+                    <div class="blog-item" style="cursor: pointer;">
+                        <img class="img-fluid" src="img/email marketing blog.jpg" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar"></i> Dec 19, 2024</span>
+                                <span><i class="fa fa-tag"></i> Email Marketing</span>
+                            </div>
+                            <h3 class="blog-title">Email Marketing Best Practices: Engage Your Audience</h3>
+                            <p>Explore how personalized email campaigns can nurture leads and drive sales.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Blog Card 6 -->
+            <div class="col-md-6">
+                <a href="blogcontent5.html" style="text-decoration: none; color: inherit;">
+                    <div class="blog-item" style="cursor: pointer;">
+                        <img class="img-fluid" src="img/ppc blog .jpg" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar"></i> Dec 18, 2024</span>
+                                <span><i class="fa fa-tag"></i> PPC Advertising</span>
+                            </div>
+                            <h3 class="blog-title">PPC Advertising: Boosting Your ROI with Paid Ads</h3>
+                            <p>Understand the fundamentals of PPC advertising and how to create campaigns that deliver results.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Blog Card 7 -->
+            <div class="col-md-6">
+                <a href="blogcontent6.html" style="text-decoration: none; color: inherit;">
+                    <div class="blog-item" style="cursor: pointer;">
+                        <img class="img-fluid" src="img/content strategy blog.jpg" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar"></i> Dec 17, 2024</span>
+                                <span><i class="fa fa-tag"></i> Content Marketing</span>
+                            </div>
+                            <h3 class="blog-title">Content Marketing Strategy: Creating Valuable Content</h3>
+                            <p>Content marketing is a powerful tool for attracting and retaining customers.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Blog Card 8 -->
+            <div class="col-md-6">
+                <a href="blogcontent8.html" style="text-decoration: none; color: inherit;">
+                    <div class="blog-item" style="cursor: pointer;">
+                        <img class="img-fluid" src="img/E-Commerce blog .jpg" alt="Blog Image">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar"></i> Dec 16, 2024</span>
+                                <span><i class="fa fa-tag"></i> E-Commerce</span>
+                            </div>
+                            <h3 class="blog-title">E-commerce SEO: Boosting Your Online Store's Visibility</h3>
+                            <p>For e-commerce businesses, ranking higher in search engine results can significantly impact sales.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white footer mt-5 pt-5">
+        <div class="container border-top border-light">
+            <div class="row g-4 py-5">
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <div class="footer-info"> 
+                        <h4 class="text-white mb-4">Our Office</h4>
+                        <div class="footer-info">
+                            <div class="d-flex align-items-center contact-item">
+                                <i class="fa fa-map-marker-alt me-3"></i>
+                                <span>NaviGo Tech Solutions<br>No. 56, 2nd Floor,<br>3rd East Cross Street,<br>Amaravathi Nagar, Arumbakkam,<br>Chennai – 600106, Tamil Nadu, India</span>
+                            </div>
+                            <div class="d-flex align-items-center contact-item mt-3">
+                                <i class="fa fa-phone-alt me-3"></i>
+                                <span>+91-6380853075</span>
+                            </div>
+                            <div class="d-flex align-items-center contact-item mt-3">
+                                <i class="fa fa-envelope me-3"></i>
+                                <span>info@navigotechsolutions.com</span>
+                            </div>
+                            <div class="d-flex pt-4 gap-3 social-icons">
+                                <a class="social-btn" href="https://x.com/NavigoTech">
+                                    <div class="social-circle">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                </a>
+                                <a class="social-btn" href="https://www.facebook.com/NavigoTechsolutions/">
+                                    <div class="social-circle">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+                                <a class="social-btn" href="https://www.instagram.com/navigo_tech_solutions">
+                                    <div class="social-circle">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </a>
+                                <a class="social-btn" href="https://www.linkedin.com/company/navigo-tech-solutions/">
+                                    <div class="social-circle">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                           
+                </div>
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <h4 class="text-white">Quick Links</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="Services.html" class="text-white">Services</a></li>
+                        <li><a href="pricing.html" class="text-white">Pricing</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-section">
+                    <h4 class="text-white">Services</h4>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="Services.html#web-development" class="text-white">Web Development</a></li>
+                        <li><a href="Services.html#digital-marketing" class="text-white">Digital Marketing</a></li>
+                        <li><a href="Services.html#seo" class="text-white">SEO Optimization</a></li>
+                        <li><a href="Services.html#social-media" class="text-white">Social Media Marketing</a></li>
+                        <li><a href="Services.html#content" class="text-white">Content Creation</a></li>
+                        <li><a href="Services.html#consulting" class="text-white">IT Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="text-white">&copy; <span class="current-year"></span> <a href="index.html" class="text-white">NaviGo Tech Solutions</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/916380853075" class="whatsapp-chat" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Logo scroll effect
+        const defaultLogo = document.getElementById("default-logo");
+        const scrollLogo = document.getElementById("scroll-logo");
+
+        window.onscroll = function() {
+            if (window.scrollY > 50) {
+                defaultLogo.style.display = "none";
+                scrollLogo.style.display = "inline";
+            } else {
+                defaultLogo.style.display = "inline";
+                scrollLogo.style.display = "none";
+            }
+        };
+    </script>
+
+    <script>
+        // Back to top button functionality
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.back-to-top').addClass('show');
+            } else {
+                $('.back-to-top').removeClass('show');
+            }
+        });
+
+        $('.back-to-top').click(function () {
+            $('html, body').animate({scrollTop: 0}, 'smooth');
+            return false;
+        });
+    </script>
+
+</body>
+
+</html>

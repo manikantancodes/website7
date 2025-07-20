@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | NaviGo Tech Solutions - Digital Transformation Experts</title>
+    <meta name="description" content="Comprehensive digital services portfolio from NaviGo Tech Solutions - Web Development, App Development, Digital Marketing, AI Solutions, Branding & IT Consulting">
+    <meta name="keywords" content="web development, app development, digital marketing, AI solutions, branding, IT consulting, Chennai tech company">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1E90FF;
+            --secondary-color: #4169E1;
+            --accent-color: #40E0D0;
+            --dark-color: #0a192f;
+            --light-color: #f8f9fa;
+            --text-primary: #343a40;
+            --text-secondary: #6c757d;
+            --text-light: #ffffff;
+            --success-color: #28a745;
+            --warning-color: #ffc107;
+            --error-color: #dc3545;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.7;
+            background-color: #fff;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, rgba(30, 144, 255, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
+            padding: 6rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section:before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(30, 144, 255, 0.15) 0%, transparent 70%);
+            z-index: 0;
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-section h1 {
+            font-size: 3.2rem;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .btn-dodger {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+        .btn-dodger:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(30, 144, 255, 0.2);
+        }
+        
+        .company-logo {
+            max-width: 220px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        
+        .service-section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color) 0%, rgba(30, 144, 255, 0) 100%);
+            border-radius: 2px;
+        }
+        
+        .section-title:before {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color) 0%, rgba(30, 144, 255, 0) 100%);
+            opacity: 0.5;
+        }
+        
+        .service-card {
+            --mouse-x: 50%;
+            --mouse-y: 50%;
+            transform-style: preserve-3d;
+            position: relative;
+            border-radius: 16px;
+            background: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: fadeIn 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        .service-card:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(30, 144, 255, 0.1) 0%, transparent 80%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: -1;
+            border-radius: 16px;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(30, 144, 255, 0.15);
+        }
+        .service-card:hover:after {
+            opacity: 1;
+        }
+        .service-card-header {
+            background: linear-gradient(90deg, var(--primary-color) 0%, #1a7fd9 100%);
+            color: white;
+            padding: 1.5rem;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            border-radius: 16px 16px 0 0;
+        }
+        .service-card-header h3 {
+            color: #fff;
+        }
+        .service-icon {
+            transition: transform 0.5s;
+        }
+        .service-card:hover .service-icon {
+            transform: rotateY(180deg);
+        }
+        
+        .service-card-body {
+            padding: 2rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .service-features li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-features li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .ai-service-card {
+            background: white;
+            color: var(--text-primary);
+        }
+        
+        .ai-service-card .service-card-header {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .ai-service-card .service-icon {
+            color: var(--primary-color);
+        }
+        
+        .ai-service-card .service-features li:before {
+            color: var(--primary-color);
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, rgba(248, 249, 250, 1) 0%, rgba(233, 240, 248, 1) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-section:before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(30, 144, 255, 0.08) 0%, transparent 70%);
+        }
+        .contact-card {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            position: relative;
+            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(30, 144, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(30, 144, 255, 0.08);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        @media (min-width: 768px) {
+            .contact-card {
+                flex-direction: row;
+                gap: 3rem;
+            }
+            .border-end-md {
+                border-right: 1px solid #e3eafc;
+            }
+        }
+        .contact-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e3eafc 0%, #f8faff 100%);
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.08);
+        }
+        .form-floating > .form-control, .form-floating > textarea.form-control {
+            border-radius: 12px;
+            border: 1px solid #e3eafc;
+            background: #f8faff;
+        }
+        .form-floating > label {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(30,144,255,0.08);
+        }
+        
+        .badge-tag {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 0.7rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 50px;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 3rem 0;
+            }
+            
+            .service-section {
+                padding: 3rem 0;
+            }
+            
+            .company-logo {
+                max-width: 120px;
+            }
+        }
+        
+        .footer {
+            background: linear-gradient(90deg, #e3eafc 0%, #f8faff 100%);
+            color: var(--text-primary);
+            padding: 2rem 0 0 0;
+            border-top: 1px solid #e3eafc;
+        }
+        .footer a {
+            color: var(--primary-color);
+            transition: color 0.2s;
+        }
+        .footer a:hover {
+            color: var(--secondary-color);
+        }
+        .footer .social-icons {
+            justify-content: flex-end;
+        }
+        .footer .social-circle {
+            background: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.08);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .footer .social-circle i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: color 0.2s;
+        }
+        .footer .social-btn:hover .social-circle {
+            background: var(--primary-color);
+            box-shadow: 0 4px 16px rgba(30,144,255,0.15);
+        }
+        .footer .social-btn:hover .social-circle i {
+            color: #fff;
+        }
+
+        .btn-dodger {
+            background: #1E90FF;
+            color: #fff;
+            border: none;
+            border-radius: 999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.08);
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .btn-dodger:hover, .btn-dodger:focus {
+            background: #187bcd;
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(30,144,255,0.15);
+            outline: none;
+        }
+        .btn-whiten {
+            background: #fff;
+            color: #1E90FF;
+            border: 2px solid #1E90FF;
+            border-radius: 999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(30,144,255,0.08);
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+        .btn-whiten:hover, .btn-whiten:focus {
+            background: #e3eafc;
+            color: #187bcd;
+            box-shadow: 0 4px 16px rgba(30,144,255,0.10);
+            outline: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        a:focus, button:focus {
+            outline: 2px dashed var(--primary-color);
+            outline-offset: 3px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+
+        @media (max-width: 991.98px) {
+            .container {
+                max-width: 100% !important;
+                width: 100% !important;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            .hero-section h1 {
+                font-size: 2.1rem;
+            }
+            .company-logo {
+                max-width: 140px;
+                margin-bottom: 1.2rem;
+            }
+            .service-section {
+                padding: 2.5rem 0;
+            }
+            .service-card {
+                padding: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+            .service-card-header {
+                padding: 1rem;
+                font-size: 1.1rem;
+            }
+            .section-title {
+                font-size: 1.4rem;
+                padding-bottom: 10px;
+            }
+        }
+        @media (max-width: 767.98px) {
+            .hero-section {
+                padding: 2.5rem 0 1.5rem;
+            }
+            .service-section {
+                padding: 1.5rem 0;
+            }
+            .service-card {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            .service-card-header {
+                padding: 0.8rem;
+                font-size: 1rem;
+            }
+            .contact-card {
+                flex-direction: column !important;
+                gap: 1.2rem;
+                padding: 1.2rem !important;
+            }
+            .border-end-md {
+                border-right: none !important;
+                border-bottom: 1px solid #e3eafc;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+            .contact-icon {
+                width: 38px;
+                height: 38px;
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: 575.98px) {
+            .hero-section h1 {
+                font-size: 1.3rem;
+            }
+            .company-logo {
+                max-width: 90px;
+                margin-bottom: 0.7rem;
+            }
+            .service-card {
+                padding: 0.7rem;
+            }
+            .service-card-header {
+                padding: 0.5rem;
+                font-size: 0.95rem;
+            }
+            .section-title {
+                font-size: 1.1rem;
+                padding-bottom: 7px;
+            }
+            .btn-dodger, .btn-whiten {
+                padding: 0.5rem 1.1rem;
+                font-size: 0.95rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .btn-dodger, .btn-whiten {
+                padding: 0.4rem 0.7rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <img src="img/NAVIGO  tech solutions logo .png" alt="NaviGo Tech Solutions Logo" class="company-logo">
+                    <h2 class="mb-2" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--primary-color);">NaviGo Tech Solutions</h2>
+                    <h1 class="mb-3">Our Digital Services Portfolio</h1>
+                    <p class="lead mb-4">Comprehensive technology solutions to transform your business and drive growth in the digital age</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#web-development" class="btn btn-dodger mx-2">Explore Services</a>
+                        <a href="#contact" class="btn btn-whiten mx-2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="service-section" id="services">
+        <div class="container">
+            <!-- Web Development -->
+            <div class="mb-5" id="web-development">
+                <h2 class="section-title">Web Development</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Static Websites</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-file-code"></i></div>
+                                <ul class="service-features">
+                                    <li>Professional and responsive design</li>
+                                    <li>Fast Loading Speed</li>
+                                    <li>SEO Optimized</li>
+                                    <li>Mobile-Friendly</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Dynamic Websites</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-database"></i></div>
+                                <ul class="service-features">
+                                    <li>CMS Integration</li>
+                                    <li>User Management</li>
+                                    <li>Database Integration</li>
+                                    <li>Custom Admin Panel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">E-commerce Websites</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                                <ul class="service-features">
+                                    <li>Payment Gateway Integration</li>
+                                    <li>Inventory Management</li>
+                                    <li>Order Tracking System</li>
+                                    <li>Customer Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App Development -->
+            <div class="mb-5" id="app-development">
+                <h2 class="section-title">App Development</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Single-Platform Apps</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fab fa-apple"></i> <i class="fab fa-android"></i></div>
+                                <ul class="service-features">
+                                    <li>Native iOS Development</li>
+                                    <li>Native Android Development</li>
+                                    <li>Platform-Specific Features</li>
+                                    <li>App Store Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Cross-Platform Apps</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-sync-alt"></i></div>
+                                <ul class="service-features">
+                                    <li>iOS & Android Support</li>
+                                    <li>Single Codebase</li>
+                                    <li>Cost-Effective Development</li>
+                                    <li>Faster Time-to-Market</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Enterprise-Level Apps</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-building"></i></div>
+                                <ul class="service-features">
+                                    <li>Custom Enterprise Solutions</li>
+                                    <li>Advanced Security Features</li>
+                                    <li>Scalable Architecture</li>
+                                    <li>Integration Capabilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="mb-5" id="digital-marketing">
+                <h2 class="section-title">Digital Marketing Services</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">SEO</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-search"></i></div>
+                                <ul class="service-features">
+                                    <li>Keyword Research & Analysis</li>
+                                    <li>On-Page SEO Optimization</li>
+                                    <li>Technical SEO Improvements</li>
+                                    <li>Link Building Strategies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Social Media Marketing</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-share-alt"></i></div>
+                                <ul class="service-features">
+                                    <li>Social Media Strategy</li>
+                                    <li>Content Creation & Curation</li>
+                                    <li>Community Management</li>
+                                    <li>Social Media Advertising</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Content Marketing</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                                <ul class="service-features">
+                                    <li>Content Strategy Planning</li>
+                                    <li>Blog Writing & Management</li>
+                                    <li>Infographic Design</li>
+                                    <li>Video Content Creation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Email Marketing</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-envelope"></i></div>
+                                <ul class="service-features">
+                                    <li>Campaign Strategy</li>
+                                    <li>Email Template Design</li>
+                                    <li>Automation Workflows</li>
+                                    <li>Performance Tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">PPC Advertising</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-ad"></i></div>
+                                <ul class="service-features">
+                                    <li>Google Ads Management</li>
+                                    <li>Social Media Ads</li>
+                                    <li>Display Advertising</li>
+                                    <li>Remarketing Campaigns</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Analytics & Reporting</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                                <ul class="service-features">
+                                    <li>Performance Tracking</li>
+                                    <li>Custom Reporting</li>
+                                    <li>Data Analysis</li>
+                                    <li>ROI Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI & Automation -->
+            <div class="mb-5" id="ai-automation">
+                <h2 class="section-title">AI & Automation</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Autonomous Business Agents</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-robot"></i></div>
+                                <ul class="service-features">
+                                    <li>Process automation</li>
+                                    <li>API integrations</li>
+                                    <li>Self-learning algorithms</li>
+                                    <li>24/7 monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Conversational AI Agents</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-comments"></i></div>
+                                <ul class="service-features">
+                                    <li>Multilingual support</li>
+                                    <li>Sentiment analysis</li>
+                                    <li>CRM integration</li>
+                                    <li>Natural language processing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Predictive AI Agents</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                                <ul class="service-features">
+                                    <li>Demand forecasting</li>
+                                    <li>Anomaly detection</li>
+                                    <li>Custom dashboards</li>
+                                    <li>Real-time analytics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branding & Creative Services -->
+            <div class="mb-5" id="branding">
+                <h2 class="section-title">Branding & Creative Services</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Logo Design</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-signature"></i></div>
+                                <ul class="service-features">
+                                    <li>Custom Logo Creation</li>
+                                    <li>Multiple Concepts</li>
+                                    <li>Vector Files</li>
+                                    <li>Unlimited Revisions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Brand Guidelines</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-book"></i></div>
+                                <ul class="service-features">
+                                    <li>Color Palettes</li>
+                                    <li>Typography Selection</li>
+                                    <li>Usage Guidelines</li>
+                                    <li>Brand Voice & Tone</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Visual Identity</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-eye"></i></div>
+                                <ul class="service-features">
+                                    <li>Brand Elements</li>
+                                    <li>Marketing Materials</li>
+                                    <li>Social Media Assets</li>
+                                    <li>Business Stationery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Packaging Design</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-box"></i></div>
+                                <ul class="service-features">
+                                    <li>Custom Packaging</li>
+                                    <li>Label Design</li>
+                                    <li>Product Photography</li>
+                                    <li>Print Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI & Data-Driven Marketing -->
+            <div class="mb-5" id="ai-data-marketing">
+                <h2 class="section-title">AI & Data-Driven Marketing</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">AI-Powered Analytics</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-brain"></i></div>
+                                <ul class="service-features">
+                                    <li>Machine Learning Analysis</li>
+                                    <li>Pattern Recognition</li>
+                                    <li>Automated Reporting</li>
+                                    <li>Real-time Insights</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Personalized Campaigns</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+                                <ul class="service-features">
+                                    <li>Behavioral Analysis</li>
+                                    <li>Dynamic Content</li>
+                                    <li>Smart Segmentation</li>
+                                    <li>A/B Testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">Chatbots & Virtual Assistants</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-comments"></i></div>
+                                <ul class="service-features">
+                                    <li>24/7 Customer Support</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Multi-platform Integration</li>
+                                    <li>Learning Capabilities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced AI Solutions -->
+            <div class="mb-5" id="advanced-ai-solutions">
+                <h2 class="section-title">Advanced AI Solutions</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">AI Content Generation</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                                <ul class="service-features">
+                                    <li>Blog Post Generation</li>
+                                    <li>Social Media Captions</li>
+                                    <li>Ad Copy Creation</li>
+                                    <li>Content Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">AI Customer Segmentation</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-users"></i></div>
+                                <ul class="service-features">
+                                    <li>Behavioral Pattern Analysis</li>
+                                    <li>Dynamic Segmentation</li>
+                                    <li>Predictive Demographics</li>
+                                    <li>Purchase Pattern Recognition</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-card-header"><h3 class="mb-0">AI-Powered Lead Scoring</h3></div>
+                            <div class="service-card-body">
+                                <div class="service-icon"><i class="fas fa-star"></i></div>
+                                <ul class="service-features">
+                                    <li>Automated Lead Scoring</li>
+                                    <li>Conversion Probability Analysis</li>
+                                    <li>Engagement Tracking</li>
+                                    <li>Priority-based Routing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="section-title">Ready to Transform Your Business?</h2>
+                    <p class="lead">Let's discuss how we can help you achieve your digital goals</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="contact-card p-4 p-md-5 d-flex flex-column flex-md-row gap-4 align-items-stretch">
+                        <!-- Contact Info -->
+                        <div class="flex-fill d-flex flex-column justify-content-center gap-3 pe-md-4 border-end-md">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="contact-icon me-3"><i class="fas fa-map-marker-alt"></i></span>
+                                <div>
+                                    <h5 class="mb-1">Address</h5>
+                                    <p class="mb-0 small">No. 56, 2nd Floor, 3rd East Cross Street,<br>Arumbakkam, Chennai - 600106<br>Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="contact-icon me-3"><i class="fas fa-phone-alt"></i></span>
+                                <div>
+                                    <h5 class="mb-1">Phone</h5>
+                                    <p class="mb-0 small"><a href="tel:+916380853075" class="text-decoration-none">+91 63808 53075</a></p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="contact-icon me-3"><i class="fas fa-envelope"></i></span>
+                                <div>
+                                    <h5 class="mb-1">Email</h5>
+                                    <p class="mb-0 small"><a href="mailto:info@navigotechsolutions.com" class="text-decoration-none">info@navigotechsolutions.com</a></p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="contact-icon me-3"><i class="fas fa-globe"></i></span>
+                                <div>
+                                    <h5 class="mb-1">Website</h5>
+                                    <p class="mb-0 small"><a href="https://navigotechsolutions.com" target="_blank" class="text-decoration-none">navigotechsolutions.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 NaviGo Tech Solutions. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons d-flex pt-4 gap-3">
+                        <a class="social-btn" href="https://x.com/NavigoTech" target="_blank" rel="noopener">
+                            <div class="social-circle">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a class="social-btn" href="https://www.facebook.com/NavigoTechsolutions/" target="_blank" rel="noopener">
+                            <div class="social-circle">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a class="social-btn" href="https://www.instagram.com/navigo_tech_solutions" target="_blank" rel="noopener">
+                            <div class="social-circle">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a class="social-btn" href="https://www.linkedin.com/company/navigo-tech-solutions/" target="_blank" rel="noopener">
+                            <div class="social-circle">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
