@@ -12,6 +12,8 @@
     --secondary: #555555;  /* Dark gray - Secondary text */
     --light: #F1F3FA;     /* Light blue-gray - Light backgrounds */
     --dark: #1C2035;      /* Deep navy - Dark text and backgrounds */
+    /* Text */
+    --text-color: #1C2035; /* Default text color for navbar links and similar elements */
     
     /* Additional Colors */
     --ivory: #FFFFFF;     /* Background color */
