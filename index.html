@@ -74,10 +74,15 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-            <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
     <link href="css/floating-services.css" rel="stylesheet">
+    <style>/* hide old sticky-wrapper nav on homepage */
+    .site-navbar{display:none!important;}
+    .navbar-nav .nav-link{color:#1C2035!important;font-weight:500;}
+    .navbar-nav .nav-link.active{color: #1E90FF !important;}
+    </style>
 
     <link rel="icon" type="image/png" href="img/20241213_225245.png" />
 
@@ -1240,7 +1245,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease;
     font-size: 1.6rem;
-}
+        }
 
         .whatsapp-chat:hover {
             background: #128C7E;
@@ -3189,7 +3194,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease;
     font-size: 1.6rem;
-}
+        }
 
         .whatsapp-chat:hover {
             background: #128C7E;
@@ -4190,8 +4195,8 @@
     transform: scale(1.18) rotate(-8deg);
 }
     </style>
-</head>
-<body>
+    </head>
+    <body>
 
     <!-- Top Bar -->
     <div class="top-bar">
@@ -4210,8 +4215,8 @@
                         <a href="https://wa.me/916380853075" class="top-icon-link" title="WhatsApp Us" target="_blank">
                             <span class="icon-whatsapp"></span>
                         </a>
-                    </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -4238,42 +4243,47 @@
     </div>
 
     <!-- Main Navigation -->
-    <div class="sticky-wrapper">
-        <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-            <div class="container">
-                <div class="row align-items-center position-relative">
-                    <div class="site-logo">
-                        <a href="index.html" class="logo-container">
-                            <div class="logo-image">
-                                <img src="img/20241213_225245.png" alt="NaviGo Tech Solutions" class="logo-img">
-                            </div>
-                            <div class="logo-text">
-                                <div class="brand-name">NaviGo</div>
-                                <div class="brand-tagline">Tech Solutions</div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-12">
-                        <nav class="site-navigation text-right ml-auto" role="navigation">
-                            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                                <li><a href="index.html" class="nav-link active">Home</a></li>
-                                <li><a href="about.html" class="nav-link">About</a></li>
-                                <li><a href="Services.html" class="nav-link">Services</a></li>
-                                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-                                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <div class="toggle-button d-inline-block d-lg-none">
-                        <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black">
-                            <span class="icon-menu h3"></span>
-                        </a>
-                    </div>
+    <!-- Navbar & Hero Start -->
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <!-- Logo Section -->
+            <img id="default-logo" src="img/20241213_225245.jpg" alt="Logo" style="height: 100px; width: 100px; margin-right: 80px; margin-top: 3px;">
+            <!-- Changed to scroll logo -->
+            <img id="scroll-logo" src="img/20241213_225245.jpg" alt="Logo" style="height: 100px; width: 100px; margin-right: 80px; margin-top: 3px; display: none;">
+                
+                <a href="" class="navbar-brand p-0" style="display: flex; align-items: center; margin-left: -60px;">
+                <h1 class="m-0">
+                    NaviGo
+                    <span>Tech Solutions</span>
+                    <!-- Tech Solutions under NaviGo -->
+                </h1>
+            </a>
+                    <div class="navbar-nav mx-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="Services.html" class="nav-item nav-link">Services</a>
+                        <a href="pricing.html" class="nav-item nav-link">Pricing</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-            </div>
+            </nav>
+        <!-- Navbar & Hero End -->
+
+        <script>
+            // Get references to both logos
+            const defaultLogo = document.getElementById("default-logo");
+            const scrollLogo = document.getElementById("scroll-logo");
+
+            // Function to toggle logo on scroll
+            window.onscroll = function() {
+                if (window.scrollY > 50) { // Scroll threshold (adjust as needed)
+                    defaultLogo.style.display = "none"; // Hide default logo
+                    scrollLogo.style.display = "inline"; // Show scroll logo
+                } else {
+                    defaultLogo.style.display = "inline"; // Show default logo
+                    scrollLogo.style.display = "none"; // Hide scroll logo
+                }
+            };
+        </script>
         </header>
     </div>
 
@@ -4281,14 +4291,14 @@
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
-            </div>
-        </div>
+  </div>
+  </div>
         <!-- Spinner End -->
-        
+
 
 
         <div class="container-xxl bg-white p-0">
-            <style>
+<style>
                 * {
                     margin: 0;
                     padding: 0;
@@ -4326,13 +4336,13 @@
                     justify-content: center;
                 }
 
-                .hero-header {
-                    position: relative;
+.hero-header {
+  position: relative;
                     min-height: 100vh;
                     height: 100vh;
                     width: 100%;
                     background: #1e90ff;
-                    overflow: hidden;
+  overflow: hidden;
                     margin: 0;
                     padding: 0;
                     display: flex;
@@ -4344,7 +4354,7 @@
                     text-align: center;
                     color: white;
                     z-index: 10;
-                    position: relative;
+  position: relative;
                     max-width: 800px;
                     padding: 0 20px;
                 }
@@ -4374,7 +4384,7 @@
                     width: 100%;
                     z-index: 10;
                     background: transparent;
-                    overflow: visible;
+  overflow: visible;
                 }
 
                 .wave-container img {
@@ -4597,17 +4607,17 @@
                 .beam-hero-section {
                     position: relative;
                     min-height: 100vh;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
                     z-index: 3;
                     cursor: crosshair;
-                }
+}
         
                                 /* Enhanced Lighthouse Structure */
                 .lighthouse-container {
-                    position: absolute;
+  position: absolute;
                     left: 50%;
                     bottom: 10%;
                     transform: translateX(-50%);
@@ -4624,7 +4634,7 @@
 
                 /* Rocky Base */
                 .lighthouse-rocks {
-                    position: absolute;
+  position: absolute;
                     bottom: -30px;
                     left: 50%;
                     transform: translateX(-50%);
@@ -4662,7 +4672,7 @@
                     width: 200px;
                     height: 80px;
                     background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-                    border-radius: 30px;
+  border-radius: 30px;
                     box-shadow: 
                         inset 0 5px 15px rgba(0,0,0,0.1),
                         0 8px 25px rgba(0,0,0,0.3);
@@ -5039,9 +5049,9 @@
                     width: 0;
                     height: 0;
                     background: transparent;
-                    pointer-events: none;
+  pointer-events: none;
                     z-index: 6;
-                    transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
                     transition: width 0.15s ease-out, height 0.15s ease-out, transform 0.15s ease-out;
                 }
         
@@ -5086,31 +5096,31 @@
                 }
         
                 /* Text Styling */
-                .beam-hero-heading {
-                    position: relative;
+.beam-hero-heading {
+  position: relative;
                     z-index: 7;
                     font-size: 4rem;
                     font-family: 'Montserrat', sans-serif;
-                    font-weight: 700;
+  font-weight: 700;
                     color: #f8fafc;
-                    text-align: center;
+  text-align: center;
                     letter-spacing: 0.1em;
                     text-shadow: 
                         2px 2px 4px rgba(0, 0, 0, 0.5),
                         0 0 20px rgba(248, 250, 252, 0.3);
                     margin-top: 6rem;
-                    user-select: none;
-                }
+  user-select: none;
+}
         
-                .beam-letter {
-                    display: inline-block;
+.beam-letter {
+  display: inline-block;
                     transition: all 0.4s ease;
                     opacity: 0.6;
                     transform: translateY(0);
-                }
+}
         
-                .beam-letter.active {
-                    opacity: 1;
+.beam-letter.active {
+  opacity: 1;
                     color: #fbbf24;
                     text-shadow: 
                         0 0 15px rgba(251, 191, 36, 1),
@@ -5134,10 +5144,10 @@
         
                 /* Ocean Waves */
                 .ocean {
-                    position: absolute;
+  position: absolute;
                     bottom: 0;
-                    left: 0;
-                    right: 0;
+  left: 0;
+  right: 0;
                     height: 120px;
                     background: linear-gradient(180deg, 
                         rgba(30, 58, 138, 0.9) 0%, 
@@ -7142,7 +7152,7 @@
 
 
     <!-- Glass Cube Animation CSS -->
-    <style>
+<style>
     .glass-cubes-container {
       position: absolute;
       top: 0;
@@ -8035,7 +8045,7 @@
     <style>
         /* Lead Magnet Popup Styles */
         .lead-popup-overlay {
-            position: fixed;
+        position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -8044,7 +8054,7 @@
             backdrop-filter: blur(5px);
             z-index: 10000;
             display: none;
-            align-items: center;
+        align-items: center;
             justify-content: center;
             padding: 20px;
             animation: fadeIn 0.3s ease-out;
@@ -8068,7 +8078,7 @@
             color: white;
             padding: 15px 20px 12px;
             border-radius: 12px 12px 0 0;
-            position: relative;
+        position: relative;
         }
 
         .lead-popup-header h3 {
@@ -8079,14 +8089,14 @@
         }
 
         .lead-popup-close {
-            position: absolute;
+        position: absolute;
             top: 20px;
             right: 25px;
             background: none;
             border: none;
             color: white;
             font-size: 2rem;
-            cursor: pointer;
+        cursor: pointer;
             line-height: 1;
             padding: 0;
             width: 30px;
@@ -8122,7 +8132,7 @@
         }
 
         .lead-popup-form {
-            display: flex;
+        display: flex;
             flex-direction: column;
             gap: 20px;
         }
@@ -8154,7 +8164,7 @@
         .lead-form {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+        gap: 10px;
         }
 
         .form-group {
@@ -8182,7 +8192,7 @@
         .lead-submit-btn {
             background: linear-gradient(135deg, #1e90ff, #4169e1);
             color: white;
-            border: none;
+        border: none;
             padding: 12px 20px;
             border-radius: 6px;
             font-size: 0.9rem;
@@ -8217,10 +8227,10 @@
             bottom: 100px;
             right: 20px;
             background: linear-gradient(135deg, #1e90ff, #4169e1);
-            color: white;
+        color: white;
             padding: 15px 20px;
             border-radius: 50px;
-            cursor: pointer;
+        cursor: pointer;
             box-shadow: 0 5px 20px rgba(30, 144, 255, 0.3);
             transition: all 0.3s ease;
             z-index: 9998;
@@ -8310,7 +8320,7 @@
             background: #d4edda;
             border-radius: 10px;
             margin-top: 20px;
-        }
+    }
     </style>
 
     <script>
@@ -8437,7 +8447,7 @@ Digital Marketing Success Blueprint
    - Conversion tracking
    - Performance monitoring
 ```
-</script>
+    </script>
 
     <!-- WhatsApp Chat Button -->
     <a href="https://wa.me/916380853075" class="whatsapp-chat" target="_blank">
@@ -8668,9 +8678,9 @@ For more information, visit: https://navigotechsolutions.com
         const searchResults = document.createElement('div');
         searchResults.className = 'search-results';
         searchResults.style.cssText = `
-            position: absolute;
+      position: absolute;
             top: 100%;
-            left: 0;
+      left: 0;
             right: 0;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
@@ -8749,7 +8759,7 @@ For more information, visit: https://navigotechsolutions.com
                     <div class="p-4 text-center text-gray-600">
                         <div class="text-sm">No results found</div>
                         <div class="text-xs text-gray-500 mt-1">Try different keywords</div>
-                    </div>
+      </div>
                 `;
             } else {
                 searchResults.innerHTML = results.map(result => `
@@ -8758,7 +8768,7 @@ For more information, visit: https://navigotechsolutions.com
                             <div>
                                 <div class="font-medium text-gray-800">${result.name}</div>
                                 <div class="text-xs text-gray-500 capitalize">${result.category}</div>
-                            </div>
+    </div>
                             <div class="text-xs text-blue-500 capitalize">${result.type}</div>
                         </div>
                     </a>
